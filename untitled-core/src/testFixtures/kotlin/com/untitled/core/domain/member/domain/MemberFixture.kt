@@ -11,7 +11,7 @@ object MemberFixture {
         name: String = generateString(),
         memberType: MemberType = generateEnum(MemberType::class.java),
         socialId: String = generateString(),
-        socialType: MemberSocialType = generateEnum(MemberSocialType::class.java),
+        socialType: SocialType = generateEnum(SocialType::class.java),
     ) = Member(
         memberId = memberId,
         name = name,

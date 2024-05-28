@@ -19,8 +19,14 @@ data class MemberEntity(
     @Enumerated(EnumType.STRING)
     val memberType: MemberType,
 
-    val name: String,
+    var name: String,
 
     @Embedded
     val social: MemberSocial,
-) : BaseTimeEntity()
+) : BaseTimeEntity() {
+
+    fun update(name: String) {
+        this.name = name
+    }
+
+}

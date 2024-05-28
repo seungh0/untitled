@@ -11,10 +11,14 @@ enum class ErrorCode(
     E400_INVALID_ARGUMENTS(httpStatusCode = 400, code = "invalid_arguments"),
 
     /**
+     * 404 Not Found
+     */
+    E404_NOT_EXISTS_MEMBER(httpStatusCode = 409, code = "not_exists_member"),
+
+    /**
      * 409 Conflict
      */
     E409_ALREADY_EXISTS_MEMBER(httpStatusCode = 409, code = "already_exists_member"),
-
 
     /**
      * 500 Internal Server Error

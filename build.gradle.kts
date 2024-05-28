@@ -54,6 +54,7 @@ subprojects {
         // spring boot
         annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
         implementation("org.springframework.boot:spring-boot-starter-aop")
+        implementation("org.springframework.boot:spring-boot-starter-validation")
 
         // test
         testImplementation("org.springframework.boot:spring-boot-starter-test")

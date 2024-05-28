@@ -8,10 +8,11 @@ data class Member(
     val name: String,
     val memberType: MemberType,
     val socialId: String,
-    val socialType: MemberSocialType,
+    val socialType: SocialType,
 ) {
 
     fun toEntity() = MemberEntity(
+        id = memberId,
         name = name,
         memberType = memberType,
         social = MemberSocial(socialType = socialType, socialId = socialId)
