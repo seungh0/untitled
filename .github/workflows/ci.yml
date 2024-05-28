@@ -3,15 +3,10 @@ name: "CI"
 on:
   pull_request:
     branches:
-      - main
-    types:
-      - opened
-      - synchronize
-      - reopened
+      - develop
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - develop
 
 jobs:
   test:
