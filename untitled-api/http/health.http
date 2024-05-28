@@ -1,0 +1,2 @@
+### Readiness Probe
+GET {{api}}/health/readiness
